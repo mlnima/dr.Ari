@@ -1,0 +1,39 @@
+@import "../../variables/variables";
+
+.Nav {
+
+  position: fixed;
+  top:75px;
+  right: 0;
+  left: 0;
+  //width:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: center;
+  background-color: white;
+  //text-align: left;
+  button{
+    @include btn2;
+    font-size: large;
+  }
+  a{
+    @include link2;
+    font-size: large;
+  }
+  .NavItem{
+    padding: 10px 10px;
+    border-bottom: 1px rgba(0,0,0, .1) solid;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    color: $colorMain;
+    &:hover{
+      background-color: $colorMain;
+      color: white;
+    }
+    &:before{
+      margin: 0 5px;
+    }
+  }
+}

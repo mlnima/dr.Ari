@@ -1,0 +1,40 @@
+$colorMain :rgb(19, 191, 177);
+$colorTransparentBlack :rgba(0, 0, 0,0.5);
+$colorTransparentBlue:rgba(0, 0, 255,0.2);
+$textColor1 : black;
+$colorBlue : #0095eb;
+$lightBackgroundColor : #fff;
+
+@mixin testBorder{
+  border: 1px black solid;
+}
+@mixin btn1{
+  color: $colorMain;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin btn2{
+  color: $textColor1;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin link1{
+  color: $colorMain;
+  text-decoration: none;
+}
+@mixin link2{
+  color: $textColor1;
+  text-decoration: none;
+}
+@mixin border1{
+  border: $colorMain .4px solid;
+  border-radius: 25px;
+}

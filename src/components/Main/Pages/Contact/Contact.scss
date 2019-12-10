@@ -1,0 +1,98 @@
+@import "../../../../variables/variables";
+
+.Contact {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  //background-color: rgba(0, 0, 255, 0.1);
+
+  .appointment, .addressInfo {
+    background-color: #f2bb00;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .address{
+    width: 80%;
+    //background-color: white;
+    font-weight: bold;
+    padding: 10px;
+    i{
+      margin: 0 5px;
+    }
+  }
+
+  .workingDays {
+    //background-color: white;
+    width: 95%;
+    display: grid;
+    //max-width: 600px;
+    grid-gap: 10px;
+    padding: 0;
+    margin: 30px 0;
+
+    .workingDaysItem {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      //justify-content: space-between;
+      align-items: center;
+
+      //@include border1
+      .morning {
+        color: white;
+        background-color: #666666;
+        font-size: small;
+        padding:5px;
+        height: 100%;
+      }
+
+      .afternoon {
+        background-color: #f2bb00;
+        font-size: small;
+        padding:5px;
+        height: 100%;
+      }
+
+      .day {
+        background-color: white;
+        //padding: 10px 10px;
+        //width: 70px;
+        padding:5px;
+        height: 100%;
+      }
+
+      //span{
+      //  color: white;
+      //  background-color:#666666;
+      //}
+    }
+    .mittwoch{
+      span{
+        background-color: red;
+        color: white;
+        padding:5px;
+        height: 100%;
+      }
+
+    }
+
+  }
+
+
+  .googleMap {
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    max-width: 600px;
+    max-height: 600px;
+  }
+}
